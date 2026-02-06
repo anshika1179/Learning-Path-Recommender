@@ -24,4 +24,4 @@ Compared to basic course recommenders:
 - **Progress Tracking & Adaptive Replanning** – Updates path based on completions and feedback
 - **Visual Dashboard** – Timeline view, progress heatmap, skill gaps, and more
 - **Explainable Recommendations** – Clear "why this course" reasoning with alternatives
-- 
+
