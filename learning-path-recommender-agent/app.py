@@ -15,7 +15,11 @@ if 'collection' not in st.session_state:
         st.session_state.collection = embed_and_store()
 
 # Progress file
-PROGRESS_FILE = "progress.json"
+
+# Get the directory where this script is located
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+PROGRESS_FILE = os.path.join(BASE_DIR, "progress.json")
+
 if not os.path.exists(PROGRESS_FILE):
     with open(PROGRESS_FILE, "w") as f:
         json.dump({}, f)

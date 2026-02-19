@@ -5,16 +5,21 @@ import os
 import pickle
 
 EMBEDDING_MODEL = SentenceTransformer('all-MiniLM-L6-v2')
-EMBEDDINGS_FILE = "embeddings.pkl"
+
+# Get the directory where this script is located
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+EMBEDDINGS_FILE = os.path.join(BASE_DIR, "embeddings.pkl")
 
 def load_courses():
-    df = pd.read_csv("data/sample_courses.csv")
+    csv_path = os.path.join(BASE_DIR, "data", "sample_courses.csv")
+    df = pd.read_csv(csv_path)
     df.fillna("", inplace=True)
     return df
 
 def embed_and_store():
     """Create and store embeddings using pickle instead of ChromaDB"""
     if os.path.exists(EMBEDDINGS_FILE):
+
         print("Loading existing embeddings...")
         with open(EMBEDDINGS_FILE, 'rb') as f:
             return pickle.load(f)
