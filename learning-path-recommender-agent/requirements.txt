@@ -1,0 +1,11 @@
+streamlit
+crewai
+langchain
+langchain-community
+langchain-core
+langchain-openai   # agar OpenAI use krenge
+sentence-transformers
+chromadb
+pandas
+plotly
+python-dotenv      # API keys ke liye optional

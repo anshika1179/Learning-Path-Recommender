@@ -1,0 +1,7 @@
+title,description,prerequisites,difficulty,duration_hours,platform,link,topics
+"Python for Beginners","Learn Python basics, variables, loops, functions.","None","Beginner",20,"YouTube","https://youtube.com/playlist?python","python,basics,programming"
+"Data Structures in Python","Arrays, linked lists, stacks, queues, trees.","Python for Beginners","Intermediate",30,"Coursera","https://coursera.org/ds-python","python,data-structures,algorithms"
+"Machine Learning Basics","Supervised learning, regression, classification.","Data Structures in Python","Intermediate",40,"Coursera","https://coursera.org/ml-andrew","ml,regression,classification"
+"Deep Learning Specialization","Neural networks, CNNs, RNNs.","Machine Learning Basics","Advanced",60,"Coursera","https://coursera.org/deeplearning","dl,cnn,rnn"
+"Web Development with Flask","Build web apps with Flask.","Python for Beginners","Intermediate",25,"Udemy","https://udemy.com/flask","web,flask,python"
+"SQL for Data Science","Queries, joins, aggregation.","None","Beginner",15,"freeCodeCamp","https://freecodecamp.org/sql","sql,database"
